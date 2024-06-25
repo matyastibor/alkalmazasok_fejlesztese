@@ -1,0 +1,853 @@
+body, html {
+	padding				: 0px;
+	margin				: 0px;
+	width				: 100%;
+	height				: 100%;
+}
+
+body {
+	background-color	: #bcbdc0;
+	background-image    : url('../images/background.jpg');
+	background-position : top center;
+	background-repeat	: no-repeat;
+	background-size		: 100% 100%;
+	background-attachment:fixed;	
+	color				: #232323;
+	font-family			: Arial;
+	font-size			: 13px;
+}
+
+h1 {
+	font-size			: 18px;
+	font-weight			: normal;		
+	line-height			: 30px;	
+	/* background			: #50ce33;
+	background			: linear-gradient(#50ce33, #358d21); */
+	margin				: 0px;
+	color				: #f05637;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.clear {
+	clear				: both;
+}
+
+.lista td {
+	margin				: 0px;
+	padding				: 3px;
+	text-align			: left;
+}
+
+a {
+	text-decoration		: none;
+	color				: #f05637;	
+}
+
+a:active, a:visited , img {
+	border				: none;
+	outline				: none;
+}
+
+.globalWrapper {
+	width				: 960px;
+	margin				: 20px auto;
+}
+
+.globalWrapperLogin {
+	float				: left;
+	width				: 100%;
+	height				: 100%;
+	background-color	: rgba(0,0,0,0.8);
+}
+
+.login {
+	background-color	: #fff;
+	width				: 350px;
+	padding				: 30px;
+	margin				: 20% auto;
+}
+
+.top {
+	float				: left;
+	width				: 100%;	
+	/*background-color	: rgba(0,0,0,0.5);
+	background-image    : url('../images/200x160_fogaskerek2.gif');
+	background-image    : url('../images/solutions.png');
+	background-position : left center;
+	background-repeat	: no-repeat;
+	background-size		: 150px;
+	*/	
+	color				: #fff;
+	padding				: 0px 0px;	
+}
+
+.top h2 {
+	margin-left			: 20px;
+	font-size			: 20px;
+	text-shadow			: 2px 2px 2px #000;
+}
+
+.menu {
+	float				: left;
+	width				: 100%;		
+	padding				: 0px;	
+}
+
+.menu a {
+	font-size			: 13px;
+	color				: #222;
+	display				: block;
+	float				: left;
+	padding				: 7px 10px 7px 10px;	
+	margin				: 10px 5px 0px 5px;
+	text-indent			: 16px;
+	background-color	: #ebebeb;
+	background-position : 5px center;
+	background-repeat	: no-repeat;
+	background-size		: 18px 18px;	
+}
+
+.menu a:hover {
+	color				: #f05637;
+}
+
+.menu a.aktiv {
+	color				: #fff;
+	background-color	: #f05637;
+	border				: none;
+}
+
+.menu a.logout {
+	color				: #000;
+	background-color	: #ff64b8;
+	border				: none;
+	margin-right		: 20px;
+}
+
+.menu a.logout:hover {
+	color				: #fff;
+	/*text-shadow			: 0px 0px 1px #fff;*/
+}
+
+#kezdolap {
+	margin-left			: 20px;
+	background-image	: url('../images/home.png');
+}
+
+#telephelyek {
+	background-image: url('../images/location.png');
+}
+
+#szolgaltatasok {
+	background-image: url('../images/services.png');
+}
+
+#merok {
+	background-image: url('../images/merok.png');
+}
+
+#ugyfelek {
+	background-image: url('../images/clients.png');
+}
+
+#adatbazis {
+	background-image: url('../images/database.png');
+}
+
+#logout {
+	background-image: url('../images/off.png');
+	float			: right;
+}
+
+.content {
+	float				: left;
+	width				: 100%;
+	background-color	: #fff;
+	min-height			: 500px;
+	border-top			: 1px solid #f05637;	
+}
+
+.margo {
+	float				: left;
+	margin				: 10px;
+	width				: 940px;	
+}
+
+.footer {
+	float				: left;
+	width				: 100%;
+	min-height			: 60px;
+	/*
+	background-color	: #000;
+	*/
+	background-image    : url('../images/felho_platform4.png');
+	background-position : right center;
+	background-repeat	: no-repeat;
+	background-size		: auto 100%;		
+	color				: #fff;
+	padding				: 0px 0px;
+	margin				: 10px 0px;
+}
+
+.lista {
+	border				: 1px solid #cbcbcb;
+	margin-bottom		: 10px;
+}
+
+.lista table {
+	width				: 90%;
+	margin				: 10px auto;
+}
+
+.lista tr.alt-row {
+    background			: #f3f3f3;
+}
+
+.lista td {
+	border-bottom		: 1px solid transparent;
+	border-top			: 1px solid transparent;
+}
+
+td.actions {
+	width				: 20px;
+}
+
+.lista tr:hover > td {
+	border-bottom		: 1px solid gray;
+	border-top			: 1px solid gray;
+}
+
+#fejlec:hover > td {
+	border-bottom		: 1px solid transparent !important;
+	border-top			: 1px solid transparent !important;
+}
+
+.icon {
+	height				: 20px;
+	opacity				: 1;
+	border				: none;
+}
+
+.icon:hover {
+	opacity				: 0.7;
+}
+
+.save {
+	width				: 100%;
+	background-color	: #f05637;
+	padding				: 10px 0px;
+	position			: fixed;
+	top					: 0px;
+	left				: 0px;
+	text-align			: center;
+}
+
+/* 
+############################################################################## 
+				RÉGI CSS-bõl Fogyastáskezelõ részhez innen
+##############################################################################
+*/
+
+.telephelyek, .kozmuvek, .szurok {
+	width				: 100%;
+	float				: left;
+}
+
+.kozmuvek a:hover {
+	background-color	: #6e9d2f;
+}
+
+.telephelyek a {
+	padding				: 10px 20px;
+	background-color	: #ebebeb;
+	color				: #000;
+	margin-right		: 5px;
+	float				: left;
+}
+
+.cegekMenu {
+	float				: left;
+	width				: 160px;
+	margin				: 10px 0px;
+}
+
+.cegekMenu a {
+	padding				: 3px 3px;
+	background-color	: rgba(255,255,255,0.5);
+	color				: #444444;	
+	float				: right;
+	width				: 150px;	
+	margin				: 5px 0px 0px 0px;
+	overflow			: hidden;
+	font-weight			: bold;
+	white-space			: nowrap;
+}
+
+.cegekMenu a:hover {
+	background-color	: rgba(255,255,255,0.5);
+	color				: #000;
+}
+
+.cegekMenu a.aktiv {
+	background-color	: rgba(255,255,255,1);
+	padding				: 10px 3px;
+}
+
+.fogyasztas {
+	float				: left;
+	width				: 100%;
+	min-height			: 500px;
+	background-color	: #6e9d2f;
+	background-image	: url('../images/loading.gif');
+	background-repeat	: no-repeat;
+	background-position	: center center;
+}
+
+.fogyasztasTartalom {
+	float				: left;
+	width				: 770px;
+	min-height			: 1000px;
+	margin				: 10px 10px 10px 0px;
+	background			: #fff;
+	padding-bottom		: 20px;
+}
+
+.szurok {
+	margin-bottom		: 10px;
+	/*background-image	: url('../images/filter2.png');
+	background-repeat	: no-repeat;
+	background-position	: right top;
+	background-size		: auto 100%;*/
+}
+
+.szuro {
+	float				: left;
+	border				: 1px solid #ababab;
+	background-color	: #ebebeb;
+	cursor				: pointer;
+	background-image	: url('../images/arrow-plain.png');
+	background-repeat	: no-repeat;
+	background-size		: 12px;
+	background-position	: 5px center;
+	margin-right		: 10px;
+}
+
+.szuro .parameter {
+	width				: 200px;
+	background-color	: #fff;	
+	padding				: 5px 10px 5px 10px;
+	margin-left			: 22px;
+	font-size			: 18px;
+	font-weight			: bold;	
+}
+
+.szuro .ertek {
+	display				: none;
+	width				: 220px;	
+	position			: absolute;
+	top					: inherit;
+	left				: inherit;
+	margin-top			: 0px;
+	margin-left			: 21px;
+	background-color	: #ebebeb;
+	border				: 1px solid #ababab; 
+}
+
+.parameter.rovid {
+	width				: 50px;
+}
+
+.ertek.rovid {
+	width				: 70px;
+}
+
+.szuro .ertek a {
+	display				: block;
+	width				: 100%;
+	text-indent			: 10px;
+	padding				: 5px 0px;
+	font-size			: 16px;	
+	color				: #555;
+}
+
+.szuro .ertek a:hover {
+	background-color	: #fff;
+	color				: #000;
+}
+
+.szuro .ertek a.aktiv {
+	background-color	: #222;
+	color				: #fff;
+}
+
+.cegTabla {
+	display				: none;
+}
+
+#kozmuTabla1 {
+	width				: 750px;
+	margin				: 0px auto;	
+}
+
+#kozmuTabla1 td {
+	padding				: 1px 0px 1px 2px;	
+}
+
+#potCella {
+	border-bottom: 2px solid #222;
+}
+
+#potCella.noBorder {
+	border:none;
+}
+
+.cimsor {
+	font-weight: bold;
+	color: #222;
+	border-bottom: 2px solid #000;
+}
+
+.hoOszlop {
+	width: 75px;
+}
+
+.zaroAllasOszlop {
+	width		: 64px;
+}
+
+.mertekegysegOszlop {
+	width		: 52px;	
+}
+
+.osszesenOszlop {
+	width: 50px;
+}
+
+.egysegarOszlop {
+    width: 50px;	
+}
+
+.ertekOszlop {
+	width: 70px;
+}
+
+.oraallas {
+	font-size: 11px;
+	width: 40px;
+	margin:0px;
+	background: #ffffff;
+	border: none;
+}
+
+.oraallasCella {
+	background-color	: #fff;
+	border				: 1px solid gray;
+	width				: 40px;
+	text-indent			: 0px !important;
+}
+
+.oraallasCella.inaktiv .oraallas {
+	color				: #ababab;	
+}
+
+.oraallas2 {
+	font-size: 11px;
+	width: 50px;
+	margin:0px;
+}
+
+.egysegar {
+	width: 30px;
+	text-align:center;
+}
+
+.kwh {
+	font-size: 10px;
+}
+
+.vilagos {
+	border-bottom: 2px solid #222;
+	height: 30px;
+}
+
+.sotet {
+	background: url('http://banihami.hu/images/border.png');
+}
+
+.szamlalo {
+	background-color	: #fff;	
+	padding				: 5px 10px 5px 10px;
+	font-size			: 18px;
+	font-weight			: bold;
+	width				: 45px;
+	text-align			: right;
+}
+
+#cimNyomtatni {
+	font-size:20px;
+	color: #222;
+	line-height:50px;
+	padding-top: 0px;	
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+
+#selectTable{
+	float				: left;
+	border				: 1px solid #ababab;
+	background-color	: #ebebeb;
+	cursor				: pointer;
+	background-image	: url('../images/arrow-plain.png');
+	background-repeat	: no-repeat;
+	background-size		: 12px;
+	background-position	: 5px center;
+	margin-right		: 10px;
+	margin-left			: 0px;
+	margin-top			: 8px;
+}
+
+#hoValaszto {
+	/*margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 32px;
+	width: 133px;
+	height: 32px;	
+	background: url('../images/select.png') no-repeat top left;	
+	text-align: left;	
+	text-indent: 5px;
+	cursor: pointer;*/
+	width				: 110px;
+	background-color	: #fff;	
+	padding				: 5px 10px 5px 10px;
+	margin-left			: 22px;
+	font-size			: 18px;
+	font-weight			: bold;		
+}
+
+#hoValaszto:hover  {
+	/*
+	color: #000;
+	background: url('../images/select_hover.png') no-repeat top left;
+	*/
+}
+
+#honapok  {
+	/*
+	display: none;
+	position: relative;
+	float: left;
+	z-index:1000;
+	top: 0px;
+	left: 10px;
+	margin-bottom: -400px;
+	width: 130px;
+	background: #ebebeb;
+	border: 1px solid gray;
+	text-align: left;
+	text-indent: 10px;
+	border-radius:5px;
+    -moz-box-shadow:3px 3px 3px #333;
+	-webkit-box-shadow:3px 3px 3px #333;
+	box-shadow:3px 3px 3px #333;
+	*/
+	display				: none;
+	width				: 130px;	
+	position			: absolute;
+	top					: inherit;
+	left				: inherit;
+	margin-top			: 0px;
+	margin-left			: 21px;
+	background-color	: #ebebeb;
+	border				: 1px solid #ababab; 
+}
+
+#honapok a {
+	/*
+	display: block;
+	line-height: 30px; 
+	color: #222;
+	float: left;
+	width: 100%;
+	border-bottom: 1px dotted #c8c6c6;
+	border-top: 1px solid #ebebeb;		
+	*/
+	display				: block;
+	width				: 100%;
+	text-indent			: 10px;
+	padding				: 5px 0px;
+	font-size			: 16px;	
+	color				: #555;
+}
+
+#honapok a.aktiv {
+	background-color	: #222;
+	color				: #fff;
+}
+
+#honapok a:hover {
+	/*
+	background: #ebebeb;
+	background-image:-moz-linear-gradient(top,#ebebeb,#c8c6c6);
+    background-image:-webkit-gradient(linear,left top,left bottom,from(#ebebeb),to(#c8c6c6));  
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#ebebeb,endColorStr=#c8c6c6);
+	color: #000;
+    text-shadow:none;
+	border-bottom: 1px solid #c8c6c6;
+	border-top: 1px solid #c8c6c6;
+	*/
+	background-color	: #fff;
+	color				: #000;
+}
+
+div.first, a.first   {
+	border-radius: 3px 3px 0 0;
+	border-top: 1px solid #ebebeb;	
+}
+
+div.last, a.last {
+	border-radius: 0 0 3px 3px;
+	border-bottom: 1px solid #ebebeb;	
+}
+
+#selectModTable{
+	float				: left;
+	border				: 1px solid #ababab;
+	background-color	: #ebebeb;
+	cursor				: pointer;
+	background-image	: url('../images/arrow-plain.png');
+	background-repeat	: no-repeat;
+	background-size		: 12px;
+	background-position	: 5px center;
+	margin-right		: 10px;
+	margin-left			: 10px;
+	margin-top			: 8px;
+}
+
+#modValaszto  {
+	/*
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;	
+	line-height: 32px;		
+	width: 133px;
+	height: 32px;	
+	background: url('../images/select.png') no-repeat top left;	
+	text-align: left;	
+	text-indent: 5px;
+	cursor: pointer;
+	border-radius: 5px;	
+	*/
+	width				: 140px;
+	background-color	: #fff;	
+	padding				: 5px 10px 5px 10px;
+	margin-left			: 22px;
+	font-size			: 18px;
+	font-weight			: bold;	
+}
+
+/*
+#modValaszto:hover {
+	color: #000;
+	background: url('../images/select_hover.png') no-repeat top left;		
+}
+*/
+
+#modok {
+	/*
+	display: none;
+	position: relative;
+	float: left;
+	z-index:1001;
+	top: 0px;
+	left: 10px;
+	margin-bottom: -400px;
+	width: 130px;
+	background: #ebebeb;
+	border: 1px solid gray;
+	text-align: left;
+	text-indent: 10px;
+	border-radius:5px;
+    -moz-box-shadow:3px 3px 3px #333;
+	-webkit-box-shadow:3px 3px 3px #333;
+	box-shadow:3px 3px 3px #333;
+	*/
+	display				: none;
+	width				: 160px;	
+	position			: absolute;
+	top					: inherit;
+	left				: inherit;
+	margin-top			: 0px;
+	margin-left			: 21px;
+	background-color	: #ebebeb;
+	border				: 1px solid #ababab; 
+}
+
+#modok div {
+	/*
+	display: block;
+	line-height: 30px; 
+	color: #222;
+	float: left;
+	width: 100%;
+	border-bottom: 1px dotted #c8c6c6;
+	border-top: 1px solid #ebebeb;
+	cursor: pointer;
+	*/
+	display				: block;
+	width				: 100%;
+	text-indent			: 10px;
+	padding				: 5px 0px;
+	font-size			: 16px;	
+	color				: #555;
+}
+
+#modok div.aktiv {
+	background-color	: #222;
+	color				: #fff;
+}
+
+#modok div:hover {
+	/*
+	background: #ebebeb;
+	background-image:-moz-linear-gradient(top,#ebebeb,#c8c6c6);
+    background-image:-webkit-gradient(linear,left top,left bottom,from(#ebebeb),to(#c8c6c6));  
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#ebebeb,endColorStr=#c8c6c6);
+	color: #000;
+    text-shadow:none;
+	border-bottom: 1px solid #c8c6c6;
+	border-top: 1px solid #c8c6c6;
+	*/
+	background-color	: #fff;
+	color				: #000;
+}
+
+#evesOsszes {
+	display		: none;
+}
+
+.gombSzurke, .gombZold {
+	margin-bottom: 50px;
+}
+
+.copyright {
+	color	: gray;
+	font-size: 80%;
+	margin-top: 5px;
+	display: none;
+}
+
+#keszitette {
+	margin: 50px 10px;
+	font-size: 70%;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top: 1px solid #cdcdcd;
+	padding-top: 5px;
+	text-indent: 5px;
+}
+
+.uveg {
+	border-top: 3px groove #222;
+	border-bottom: 3px ridge #222;
+	background:url('../images/bgPsw50x50.png');
+}
+
+.loginBtnPretty {	
+	width		: 107px;
+	height		: 34px;
+	background-image: url('../images/login_btn.png');
+	background-repeat: no-repeat;
+	border		: none;
+	padding		: 0px;
+	margin		: 0px;		
+	cursor		: pointer;	
+}
+
+
+.saveBtnPretty {
+	float		: right;
+	width		: 107px;
+	height		: 34px;
+	background-image: url('../images/save_btn.png');
+	background-repeat: no-repeat;
+	border		: none;
+	padding		: 0px;
+	margin		: 0px;
+	margin-bottom  : 1px;
+	margin-right: 117px;
+	cursor		: pointer;
+}
+
+.deleteBtnPretty {
+	float		: right;
+	width		: 107px;
+	height		: 34px;
+	background-image: url('../images/delete_btn.png');
+	background-repeat: no-repeat;
+	border		: none;
+	padding		: 0px;
+	margin		: 0px;
+	margin-bottom  : 1px;
+	margin-right: 117px;
+	cursor		: pointer;	
+}
+
+.inputPretty {
+	border			: 1px solid #ababab;
+	height			: 30px;
+	width			: 220px;
+	text-indent		: 5px;
+	margin			: 2px 0px 3px 0px;
+	float			: right;
+}
+
+select.inputPretty  {	
+	height			: 34px;
+	padding			: 0px;
+	line-height		: 34px;
+	text-indent		: 1px;
+}
+
+.prettyTable {
+	margin-bottom	: 2px;
+	margin-right	: -1px;
+	width			: 470px;
+}
+
+#ujMeroSor:hover > td {
+	border-top			: 1px solid transparent !important;
+	border-bottom			: 1px solid transparent !important;
+}
+
+#toTop {
+	position		: fixed;
+	bottom			: 20px;
+	left			: 50%;
+	margin-left		: 550px;
+	width			: 30px;
+	height			: 30px;
+	/*border-top	: 3px groove #222;*/
+	border-bottom	: 3px ridge #222;
+	background:url('../images/bgPsw50x50.png');
+	cursor			: pointer;
+	display			: none;
+}
+
+.deleteFileBtn {
+	color			: red;
+	font-weight		: bold;
+	cursor			: pointer;
+	opacity			: 0;
+	-ms-transform	: opacity 0.5s; /* IE 9 */
+    -webkit-transform: opacity 0.5s; /* Chrome, Safari, Opera */
+    transform		: opacity 0.5s;
+}
+
+.fileRow:hover .deleteFileBtn {
+	opacity			: 1;
+}
