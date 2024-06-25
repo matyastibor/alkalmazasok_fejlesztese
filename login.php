@@ -2,7 +2,7 @@
 session_start();
 ob_start();
 
-//url kezelés
+//url kezelĂŠs
 $subdir  = substr(realpath(dirname(__FILE__)), strlen(realpath($_SERVER['DOCUMENT_ROOT'])));
 $tmp_array = explode('?', trim($_SERVER['REQUEST_URI']));
 $uri = str_replace($subdir, '', $tmp_array[0]);
@@ -22,7 +22,7 @@ login();
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
 <meta HTTP-EQUIV="Content-Language" content="hu">
- <title>Közműnyilvántartó rendszer - Grand Corporation Kft.</title>
+ <title>KĂśzmĂťnyilvĂĄntartĂł rendszer</title>
  <meta name="description" content=""/>
  <meta name="keywords" content=""/>
  <META name="Copyright" content="">
@@ -50,7 +50,7 @@ login();
 <div class="login">
 <!--<h1 style="margin-top:-30px;margin-left:-17px;margin-bottom:10px;">&nbsp;</h1>-->
  <form method="post" action="">
-  <center><input type="password" name="password" class="inputPretty" <?php if(isset($_GET['error'])) echo 'style="border:1px solid red;float:initial !important;"'; ?> required placeholder="Jelszó" maxlength="10" style="float:initial !important;"> <input type="submit" name="submitLogin" value="" class="loginBtnPretty"></center>
+  <center><input type="password" name="password" class="inputPretty" <?php if(isset($_GET['error'])) echo 'style="border:1px solid red;float:initial !important;"'; ?> required placeholder="JelszĂł" maxlength="10" style="float:initial !important;"> <input type="submit" name="submitLogin" value="" class="loginBtnPretty"></center>
  </form>
 </div>
 
